@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Services Network | No Filter Food Trucks</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            border-bottom: 2px solid #ffaa00;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .highlight {
+            color: #ffaa00;
+        }
+        .nav-links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        .services-intro {
+            color: #00bfff;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media (min-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .service-card {
+            background-color: #1e1e1e;
+            border: 1px solid #00bfff;
+            padding: 25px;
+            border-radius: 4px;
+        }
+        .service-card h3 {
+            margin-top: 0;
+            color: #00bfff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .service-card p {
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+        .contact-info {
+            color: #ffaa00;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER & NAVIGATION -->
+        <header>
+            <h1>No Filter <span class="highlight">Food Trucks</span> & Restaurants</h1>
+            <p>The Ultimate Guide to Indianapolis's Neighborhood Blocks</p>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html" style="color: #ffaa00;">Privacy Policy</a>
+                <a href="history.html">History</a>
+                <a href="top10.html" style="color: #00ff66;">Top 10</a>
+                <a href="improve.html" style="color: #ff3333;">Need to Improve 10</a>
+                <a href="services.html" style="color: #00bfff;">Block Services</a>
+                <a href="contact.html" style="color: #ffaa00;">Contact</a>
+            </div>
+        </header>
+
+        <!-- SERVICES CONTENT -->
+        <main>
+            <h2>THE BLOCK SERVICES NETWORK</h2>
+            <p class="services-intro">Local Business Ads. Helping communities for a better tomorrow.</p>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <h3>Party & Event Rentals</h3>
+                    <p>Specializing in clean, reliable bounce houses, tables, chairs, and tents for local neighborhood events and family parties.</p>
+                    <p class="contact-info">Call/Text: (317) 749-5193</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <h3>C C Marketing Media Group LLC</h3>
+                    <p>An Indianapolis-based agency specializing in Hyper-Local Business Development. We help neighborhood businesses grow, connect with their community, and build a powerful online presence through a full suite of digital solutions.</p>
+                    <p class="contact-info">Call/Text: (317) 755-4142</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
