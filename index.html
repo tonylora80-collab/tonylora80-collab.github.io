@@ -100,10 +100,31 @@
             border-top: 1px solid #333;
             padding-top: 20px;
         }
+        body {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and Consumer Preview */
+  user-select: none; /* Standard syntax */
+}
+
     </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2234000231054551"
-     crossorigin="anonymous"></script> 
-</head>
+    <script>
+  // Disable right-click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable keyboard shortcuts (Ctrl+U, Ctrl+C, F12)
+document.onkeydown = function(e) {
+    if (e.keyCode == 123) { return false; } // F12
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { return false; } // Inspect
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 67) { return false; } // Element info
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 74) { return false; } // Console
+    if (e.ctrlKey && e.keyCode == 85) { return false; } // View source
+    if (e.ctrlKey && e.keyCode == 67) { return false; } // Copy
+};
+
+    </script>
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self';">
+
+    </head>
 <body>
 
 <div class="container">
