@@ -71,17 +71,25 @@
 .indy-logo-container {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 10px;
+    justify-content: center;
+    gap: 25px; /* Adds a nice gap between badge and text */
+    padding: 20px 0;
+    width: 100%;
 }
+
 .indy-spin-badge {
-    width: 80px;
-    height: 80px;
-    animation: indy-slow-spin 5s linear infinite;
+    width: 130px;   /* Increased from 70px to make it pop! */
+    height: 130px;  /* Increased from 70px to make it pop! */
+    flex-shrink: 0;
+    animation: indy-slow-spin 8s linear infinite; /* Slightly slowed spin down for readability */
 }
-.indy-logo-text {
-    height: 60px;
+
+.indy-logo-container h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Forces a balanced text scale */
+    line-height: 1.2;
 }
+
 @keyframes indy-slow-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
