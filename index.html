@@ -154,18 +154,32 @@ document.onkeydown = function(e) {
 <div class="container">
 
            <!-- HEADER & NAVIGATION -->
-        <header>
+<header>
   <div class="indy-logo-container">
-    <!-- Spinning NF Circle Badge -->
-    <svg class="indy-spin-badge" viewBox="0 0 100 100" xmlns="http://w3.org">
-      <circle cx="50" cy="50" r="45" fill="none" stroke="#ff6600" stroke-width="4" />
-      <circle cx="50" cy="50" r="38" fill="#1a1a1a" />
-      <text x="50" y="58" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="#fff" text-anchor="middle">NF</text>
+    <!-- Spinning Typography Badge with Curved Text -->
+    <svg class="indy-spin-badge" viewBox="0 0 120 120" xmlns="http://w3.org">
+      <defs>
+        <!-- The hidden track that guides the circular text -->
+        <path id="indyTextCircle" d="M 60,60 m -42,0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0" fill="none" />
+      </defs>
+      
+      <!-- Outer Border Ring -->
+      <circle cx="60" cy="60" r="56" fill="none" stroke="#ff6600" stroke-width="2" />
+      
+      <!-- Inner Dark Core -->
+      <circle cx="60" cy="60" r="28" fill="#1a1a1a" />
+      <text x="60" y="68" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#fff" text-anchor="middle">NF</text>
+      
+      <!-- The Rotating Text Track -->
+      <text font-family="Arial, sans-serif" font-weight="bold" font-size="7.5" fill="#ff6600" letter-spacing="1">
+        <textPath href="#indyTextCircle">NO FILTER FOOD TRUCKS &amp; RESTAURANTS •</textPath>
+      </text>
     </svg>
     
-    <!-- Your Website Headline Text -->
+    <!-- Your Website Headline Text next to it -->
     <h1>No Filter <span class="highlight">Food Trucks</span> & Restaurants</h1>
   </div>
+
 
             <p>The Ultimate Guide to Indianapolis's Neighborhood Blocks</p>
             <div class="nav-links">
