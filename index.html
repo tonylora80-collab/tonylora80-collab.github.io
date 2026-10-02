@@ -72,23 +72,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px; /* Adds a nice gap between badge and text */
+    gap: 25px;
     padding: 20px 0;
     width: 100%;
 }
-
 .indy-spin-badge {
-    width: 130px;   /* Increased from 70px to make it pop! */
-    height: 130px;  /* Increased from 70px to make it pop! */
+    width: 130px;
+    height: 130px;
     flex-shrink: 0;
-    animation: indy-slow-spin 8s linear infinite; /* Slightly slowed spin down for readability */
+    animation: indy-slow-spin 8s linear infinite;
 }
-
 .indy-logo-container h1 {
     margin: 0;
-    font-size: 2.5rem; /* Forces a balanced text scale */
+    font-size: 2.5rem;
     line-height: 1.2;
 }
+
+/* 📱 MOBILE RESPONSIVE FIX */
+@media (max-width: 600px) {
+    .indy-logo-container {
+        flex-direction: column; /* Stacks the badge centered on top of the text */
+        gap: 15px;
+    }
+    .indy-spin-badge {
+        width: 100px;  /* Scales the badge down a bit so it fits phone screens */
+        height: 100px;
+    }
+    .indy-logo-container h1 {
+        font-size: 1.8rem; /* Scales text down smoothly so it stays readable */
+        text-align: center; /* Centers the headline on phone screens */
+    }
+
 
 @keyframes indy-slow-spin {
     from { transform: rotate(0deg); }
