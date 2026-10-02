@@ -58,14 +58,38 @@
             margin-top: 0;
             text-transform: uppercase;
         }
-        .disclaimer-box {
-            background-color: #2a1100;
-            border: 2px solid #ff6600;
-            padding: 20px;
-            color: #ffb380;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
+
+.disclaimer-box {
+    background-color: #2a1100;
+    border: 2px solid #ff6600;
+    padding: 20px;
+    color: #ffb380;
+    font-weight: bold;
+    margin-bottom: 30px;
+} 
+
+.indy-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+.indy-spin-badge {
+    width: 80px;
+    height: 80px;
+    animation: indy-slow-spin 5s linear infinite;
+}
+.indy-logo-text {
+    height: 60px;
+}
+@keyframes indy-slow-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.indy-spin-badge:hover {
+    animation-play-state: paused;
+}
+
         .ranking-item {
             background-color: #1a1a1a;
             border: 1px solid #333;
@@ -131,7 +155,18 @@ document.onkeydown = function(e) {
 
            <!-- HEADER & NAVIGATION -->
         <header>
-            <h1>No Filter <span class="highlight">Food Trucks</span> & Restaurants</h1>
+  <div class="indy-logo-container">
+    <!-- Spinning NF Circle Badge -->
+    <svg class="indy-spin-badge" viewBox="0 0 100 100" xmlns="http://w3.org">
+      <circle cx="50" cy="50" r="45" fill="none" stroke="#ff6600" stroke-width="4" />
+      <circle cx="50" cy="50" r="38" fill="#1a1a1a" />
+      <text x="50" y="58" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="#fff" text-anchor="middle">NF</text>
+    </svg>
+    
+    <!-- Your Website Headline Text -->
+    <h1>No Filter <span class="highlight">Food Trucks</span> & Restaurants</h1>
+  </div>
+
             <p>The Ultimate Guide to Indianapolis's Neighborhood Blocks</p>
             <div class="nav-links">
                 <a href="index.html">Home</a>
